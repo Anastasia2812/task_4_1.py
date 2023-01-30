@@ -9,19 +9,19 @@
 Вы что? Пытаетесь делить на 0!
 
 Process finished with exit code 0"""
-def div(*args):
+def division(*args):
 
     try:
         arg1 = 10
         arg2 = 0
         res = arg1 / arg2
-    except ValueError:
-        return 'Value error'
-    except ZeroDivisionError:
-        return "Wrong devider! You can't use zero as a devider"
+    except BaseException:
+        return ("ERROR. EXIT.")
+        exit(-1)
 
-    return res
-print(f'result  {div()}')
+    return int(res)
+
+print(division())
 """
 Пример:
 Введите первое число: 10
@@ -30,9 +30,17 @@ print(f'result  {div()}')
 
 Process finished with exit code 0
 """
-def div(*args):
+ 
+    def division (*args):
     try:
         arg1 = 10
         arg2 = 10
-        res = arg1 / arg2
-    print(f"Результат деления 10 на 10: {int(res)}")
+        res = args1 / args2
+    except BaseException:
+        return ("1. EXIT.")
+        exit(-1)
+
+    return int(res)
+
+print(division())
+    
